@@ -102,6 +102,26 @@ extension UIViewController {
 
 extension UIView {
     
+    func addGradient(colors: [Any]? = nil, locations: [NSNumber]? = nil, startPoint: CGPoint? = nil, endPoint: CGPoint? = nil) {
+        let layer0 = CAGradientLayer()
+
+        layer0.colors = colors ??  [
+        UIColor(red: 0.07, green: 0.07, blue: 0.07, alpha: 0.05).cgColor,
+        UIColor(red: 0.07, green: 0.07, blue: 0.07, alpha: 0.2).cgColor,
+        UIColor(red: 0.07, green: 0.07, blue: 0.07, alpha: 0.3).cgColor,
+        UIColor(red: 0.07, green: 0.07, blue: 0.07, alpha: 1).cgColor
+        ]
+
+        layer0.locations = locations ?? [0, 0.2, 0.5, 0.9]
+        layer0.startPoint = startPoint ?? CGPoint(x: 0.25, y: 0.5)
+        layer0.endPoint = endPoint ?? CGPoint(x: 0.75, y: 0.5)
+        layer0.transform = CATransform3DMakeAffineTransform(CGAffineTransform(a: 0, b: 1, c: -1, d: 0, tx: 1, ty: 0))
+        layer0.bounds = self.bounds.insetBy(dx: -0.5*self.bounds.size.width, dy: -0.5*self.bounds.size.height)
+        layer0.position = self.center
+
+        self.layer.addSublayer(layer0)
+    }
+    
     func addShadow(to edges: [UIRectEdge], radius: CGFloat, color: UIColor? = nil) {
         
         let shadowColor = color ?? UIColor.init(displayP3Red: 0/255.0, green: 0/255.0, blue: 0/255.0, alpha: 0.2)

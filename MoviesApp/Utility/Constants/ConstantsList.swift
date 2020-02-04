@@ -8,6 +8,10 @@
 
 import UIKit
 
+struct MovieAPIConstants {
+    static let apiKey = "036f73850a21cf46f622b2d1b34d9337"
+}
+
 struct ColorScheme {
     
     struct Others {
