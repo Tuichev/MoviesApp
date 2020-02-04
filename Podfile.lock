@@ -1,0 +1,38 @@
+PODS:
+  - Alamofire (4.9.1)
+  - ObjectMapper (3.5.0)
+  - SDWebImage (5.5.1):
+    - SDWebImage/Core (= 5.5.1)
+  - SDWebImage/Core (5.5.1)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - ObjectMapper (from `https://github.com/Hearst-DD/ObjectMapper`)
+  - SDWebImage
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - SDWebImage
+    - SwiftyJSON
+
+EXTERNAL SOURCES:
+  ObjectMapper:
+    :git: https://github.com/Hearst-DD/ObjectMapper
+
+CHECKOUT OPTIONS:
+  ObjectMapper:
+    :commit: 19d499c65b8240f1220d7cf155ccd309857f8018
+    :git: https://github.com/Hearst-DD/ObjectMapper
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  ObjectMapper: 078b564ed25c6578b62588e306bf1da3924636d4
+  SDWebImage: 1245d058b7b8f59adef7a6da6bbafd4f1ab67041
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: ac7dda431ab4cfe9a862bc0b5e214651962e9dd7
+
+COCOAPODS: 1.8.4

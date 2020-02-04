@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+   MoviesApp
+  
+   Created by Vlad Tuichev on 2/4/20.
+   Copyright © 2020 Vlad Tuichev. All rights reserved.
+*/
+
+//MARK: Base
+"Error" = "Ошибка";
+"No internet connection" = "Нет соединения с интернетом";
+"Failed access to server" = "Не удалось получить доступ к серверу";
+"Oops, something went wrong. Please try again later." = "Упс! Что-то пошло не так. Пожалуйста, попробуйте позже.";
