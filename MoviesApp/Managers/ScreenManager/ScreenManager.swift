@@ -42,7 +42,7 @@ protocol BasePresenterProtocol: BaseClassesProtocol {
 typealias BaseViewController = UIViewController & BaseClassesProtocol
 typealias BasePresenter = NSObject & BasePresenterProtocol
 
-final class ScreenFactory {
+final class ScreenManager {
     
     enum TransitionType {
         case push
