@@ -29,6 +29,7 @@
 		2DCE0EB523EA12C800E656C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCE0EB423EA12C800E656C8 /* AppDelegate.swift */; };
 		2DF2898823EA14BE007FAB58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DCE0E6E23EA0A0500E656C8 /* Main.storyboard */; };
 		2DF2898923EA14C1007FAB58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DCE0E7323EA0A0600E656C8 /* LaunchScreen.storyboard */; };
+		2DF2899A23EB467F007FAB58 /* ScreenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF2899923EB467F007FAB58 /* ScreenManager.swift */; };
 		4B2F7C1B068EF3B1766EE476 /* Pods_MoviesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8701F2EA43CE4D4252844F31 /* Pods_MoviesApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		2DCE0EB023EA0FC200E656C8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2DCE0EB223EA0FC600E656C8 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2DCE0EB423EA12C800E656C8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2DF2899923EB467F007FAB58 /* ScreenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenManager.swift; sourceTree = "<group>"; };
 		6C0B088B19D21F58E0ADD6F1 /* Pods-MoviesApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviesApp.debug.xcconfig"; path = "Target Support Files/Pods-MoviesApp/Pods-MoviesApp.debug.xcconfig"; sourceTree = "<group>"; };
 		8701F2EA43CE4D4252844F31 /* Pods_MoviesApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoviesApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -201,6 +203,7 @@
 		2DCE0E9223EA0D2200E656C8 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				2DF2899823EB4640007FAB58 /* ScreenManager */,
 				2DCE0E9323EA0D4D00E656C8 /* Localization */,
 			);
 			path = Managers;
@@ -241,6 +244,14 @@
 				2DCE0E9B23EA0DCA00E656C8 /* ConstantsList.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		2DF2899823EB4640007FAB58 /* ScreenManager */ = {
+			isa = PBXGroup;
+			children = (
+				2DF2899923EB467F007FAB58 /* ScreenManager.swift */,
+			);
+			path = ScreenManager;
 			sourceTree = "<group>";
 		};
 		C4A3F77E34A6CF8074377D9C /* Pods */ = {
@@ -385,6 +396,7 @@
 				2DCE0EA023EA0E2E00E656C8 /* Extensions.swift in Sources */,
 				2DCE0E6D23EA0A0500E656C8 /* ViewController.swift in Sources */,
 				2DCE0EA123EA0E3200E656C8 /* ConstantsList.swift in Sources */,
+				2DF2899A23EB467F007FAB58 /* ScreenManager.swift in Sources */,
 				2DCE0EA423EA0E3600E656C8 /* ExtensionForLoadingView.swift in Sources */,
 				2DCE0EA223EA0E3600E656C8 /* BlockUILoadingView.swift in Sources */,
 				2DCE0EA723EA0E3B00E656C8 /* StringExtension.swift in Sources */,
