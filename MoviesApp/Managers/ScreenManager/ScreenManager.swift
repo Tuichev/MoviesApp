@@ -59,7 +59,7 @@ final class ScreenManager {
     static private var controllerKeys: [String] = []
     static private var presenterKeys: [String] = []
     
-    static func showNewViewController<T: BaseViewController>(clearByStep: Int = 2, currentVC: T, newVC: T, type: ScreenFactory.TransitionType) {
+    static func showNewViewController<T: BaseViewController>(clearByStep: Int = 2, currentVC: T, newVC: T, type: ScreenManager.TransitionType) {
         let lastIndex = controllerKeys.count - 1
         let clearOnIndex = lastIndex - clearByStep
         
@@ -75,7 +75,7 @@ final class ScreenManager {
         }
     }
     
-    static func closeViewController<T: BaseViewController>(currentVC: T, type: ScreenFactory.TransitionType, withPresenter: Bool = false) {
+    static func closeViewController<T: BaseViewController>(currentVC: T, type: ScreenManager.TransitionType, withPresenter: Bool = false) {
         let lastIndex = controllerKeys.count - 1
         let restoreOnIndex = lastIndex - 1
         

@@ -12,4 +12,7 @@ target 'MoviesApp' do
   pod 'SwiftyJSON'
   pod 'Alamofire'
 
+  pod "TMDBSwift"
+  pod "XCDYouTubeKit", "~> 2.8"
+
 end

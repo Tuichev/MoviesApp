@@ -5,18 +5,24 @@ PODS:
     - SDWebImage/Core (= 5.5.1)
   - SDWebImage/Core (5.5.1)
   - SwiftyJSON (5.0.0)
+  - TMDBSwift (0.5.1)
+  - XCDYouTubeKit (2.9.0)
 
 DEPENDENCIES:
   - Alamofire
   - ObjectMapper (from `https://github.com/Hearst-DD/ObjectMapper`)
   - SDWebImage
   - SwiftyJSON
+  - TMDBSwift
+  - XCDYouTubeKit (~> 2.8)
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - SDWebImage
     - SwiftyJSON
+    - TMDBSwift
+    - XCDYouTubeKit
 
 EXTERNAL SOURCES:
   ObjectMapper:
@@ -32,7 +38,9 @@ SPEC CHECKSUMS:
   ObjectMapper: 078b564ed25c6578b62588e306bf1da3924636d4
   SDWebImage: 1245d058b7b8f59adef7a6da6bbafd4f1ab67041
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  TMDBSwift: 9220f3dcee23372c05b92f8c111f5f4c37185aee
+  XCDYouTubeKit: 65b8c362ad9e8b69a7f6bba4e4fa3b26dc0c29f3
 
-PODFILE CHECKSUM: ac7dda431ab4cfe9a862bc0b5e214651962e9dd7
+PODFILE CHECKSUM: 88a1db566eaf6ebfe5425671bf90f154347587cf
 
 COCOAPODS: 1.8.4

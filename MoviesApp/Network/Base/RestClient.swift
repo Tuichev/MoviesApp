@@ -30,9 +30,9 @@ class RestClient: NSObject {
         
         let json = JSON(data)
         
-        self.parseData(object: json.rawValue,
-                       modelCls: LoginEntity.self,
-                       response: resp)
+//        self.parseData(object: json.rawValue,
+//                       modelCls: LoginEntity.self,
+//                       response: resp)
     }
     
     func cancellRequests() {

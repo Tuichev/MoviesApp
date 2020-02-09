@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TMDBSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //for preventing click on the few cells
         UITableViewCell.appearance().isExclusiveTouch = true
         UICollectionViewCell.appearance().isExclusiveTouch = true
+        
+        TMDBConfig.apikey = MovieAPIConstants.apiKey
         
         return true
     }
