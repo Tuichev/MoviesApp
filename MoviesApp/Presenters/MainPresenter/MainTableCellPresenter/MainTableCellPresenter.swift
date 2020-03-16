@@ -8,6 +8,21 @@
 
 import Foundation
 
+protocol Test {
+    func get(url: String?)
+}
+
+extension Test {
+    func get(url: String? = nil) {
+        
+    }
+}
+
+class Td: Test {
+    
+}
+
+
 protocol MainTableCellPresenterProtocol {
     init(view: MainVCTableViewCellProtocol)
     func getCellCount() -> Int

@@ -20,6 +20,7 @@ class MainPresenter:MainPresenterProtocol {
     weak var view: MainViewControllerProtocol?
     
     let baseImageUrl = "https://image.tmdb.org/t/p/original"
+    let languageKey = "ru"//en
     var movies: [MoviesType:[MovieEntity]] = [:]
     
     enum MoviesType: Int, CaseIterable {
@@ -77,7 +78,7 @@ class MainPresenter:MainPresenterProtocol {
     }
     
     fileprivate func loadUpocomingMovies() {
-        MovieMDB.upcoming(page: 1, language: "en") { [weak self]
+        MovieMDB.upcoming(page: 1, language: languageKey) { [weak self]
             data, upcomingMovies in
             
             guard let `self` = self, let movies = upcomingMovies else { return }
@@ -87,7 +88,7 @@ class MainPresenter:MainPresenterProtocol {
     }
     
     fileprivate func loadTopRatedMovies() {
-        MovieMDB.toprated(language: "en", page: 1) { [weak self]
+        MovieMDB.toprated(language: languageKey, page: 1) { [weak self]
             data, topRatedMovies in
             
             guard let `self` = self, let movies = topRatedMovies else { return }
@@ -97,7 +98,7 @@ class MainPresenter:MainPresenterProtocol {
     }
     
     fileprivate func loadPopularMovies() {
-        MovieMDB.popular(language: "en", page: 1){ [weak self]
+        MovieMDB.popular(language: languageKey, page: 1){ [weak self]
             data, popularMovies in
             guard let `self` = self, let movies = popularMovies else { return }
             
@@ -115,7 +116,7 @@ class MainPresenter:MainPresenterProtocol {
     
     fileprivate func getPosters(movieItem: MovieEntity, isLast: Bool, type: MoviesType) {
         
-        MovieMDB.images(movieID: movieItem.id, language: "en") { [weak self]
+        MovieMDB.images(movieID: movieItem.id, language: languageKey) { [weak self]
             data, imgs in
             
             guard let `self` = self, let images = imgs else { return }
@@ -136,7 +137,7 @@ class MainPresenter:MainPresenterProtocol {
     }
     
     fileprivate func getTrailer(movieID: Int?, completion: @escaping (String) -> Void) {
-        MovieMDB.videos(movieID: movieID, language: "en") { [weak self]
+        MovieMDB.videos(movieID: movieID, language: languageKey) { [weak self]
             apiReturn, videos in
             
             guard let item = videos?.first, item.site == "YouTube" else { return completion("")}
